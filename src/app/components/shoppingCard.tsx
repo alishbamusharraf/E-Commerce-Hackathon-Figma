@@ -26,7 +26,7 @@ const ShoppingCart = () => {
   ]);
 
   // Update quantity
-  const updateQuantity = (id, type) => {
+  const updateQuantity = (id: number, type: string): void => {
     setProducts((prevProducts) =>
       prevProducts.map((product) =>
         product.id === id
@@ -45,7 +45,10 @@ const ShoppingCart = () => {
   };
 
   // Calculate subtotal
-  const subtotal = products.reduce((total, product) => total + product.price * product.quantity, 0);
+  const subtotal = products.reduce(
+    (total, product) => total + product.price * product.quantity,
+    0
+  );
 
   return (
     <div className="min-h-screen bg-gray-50 px-4 py-8">
@@ -102,8 +105,12 @@ const ShoppingCart = () => {
               </div>
             ))}
             <div className="grid grid-cols-12 gap-4 items-center border-t pt-6">
-              <div className="col-span-9 text-right font-semibold text-gray-800">Subtotal</div>
-              <div className="col-span-3 text-right font-medium text-gray-800">£{subtotal}</div>
+              <div className="col-span-9 text-right font-semibold text-gray-800">
+                Subtotal
+              </div>
+              <div className="col-span-3 text-right font-medium text-gray-800">
+                £{subtotal}
+              </div>
             </div>
           </div>
         </div>

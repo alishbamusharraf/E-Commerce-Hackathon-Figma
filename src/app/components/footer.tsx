@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="h-96 bg-[#2A254B] ">
       <div className="flex space-x-8 pt-10 pl-20">
         <div>
-          <h1 className="text-white text-lg  font-Clash Display">Menu</h1>
+          <h1 className="text-white text-lg font-Clash Display">Menu</h1>
           <p className="text-white mt-4 text-sm">New arrivals</p>
           <p className="text-white mt-4 text-sm">Best seller</p>
           <p className="text-white mt-4 text-sm">Recently Viewed</p>
@@ -14,13 +14,13 @@ const Footer = () => {
         </div>
         <div>
           <h1 className="text-white text-lg font-Clash Display ml-20">
-            Catergory
+            Category
           </h1>
           <p className="text-white mt-4 text-sm ml-20">Crockery</p>
           <p className="text-white mt-4 text-sm ml-20">Furniture</p>
           <p className="text-white mt-4 text-sm ml-20">Homeware</p>
           <p className="text-white mt-4 text-sm ml-20">Plants pot</p>
-          <p className="text-white mt-4 text-sm ml-20">Chiar</p>
+          <p className="text-white mt-4 text-sm ml-20">Chair</p>
           <p className="text-white mt-4 text-sm ml-20">Crockery</p>
         </div>
         <div className="pl-28">
@@ -45,13 +45,11 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className="border-t-2 m-auto w-11/12 my-8"> 
-      
-      <p className="text-white mt-4 text-sm ">Copyright 2022 Avion LTD</p>
-      <div>
-        
-      </div>
-      <img src="/images/social Links.png" alt="" />
+      <div className="border-t-2 m-auto w-11/12 my-8">
+        <p className="text-white mt-4 text-sm ">Copyright 2022 Avion LTD</p>
+        <div></div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/social Links.png" alt="" />
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "../app/components/header"
 import Footer from "./components/footer"
 import HeroSection from "./components/heroSection"
@@ -13,10 +12,10 @@ import Signup from "./components/signUp"
 import HeroSec from "./components/herosec";
 import View from "./components/viewproduct";
 import ProductSingle from "./components/productssingle"
+
 export default function Home() {
   return (
      <>
-
      <Header/>
      <DownHeader/>
      <HeroSec/>
@@ -25,15 +24,12 @@ export default function Home() {
      <RelatedProducts/>
      <BrandSection/>
      <ShoppingCart/>
-    
      <BrandBuilt/>
      <FeatureFF/>
      <FeatureSecond/>
      <Signup/>
      <Footer/>
-
      <ProductSingle/>
-     
      </>
   );
 }
